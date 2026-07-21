@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://employix.co.in/sitemap.xml
