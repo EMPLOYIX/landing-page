@@ -283,6 +283,23 @@
   .agni-lead{border-left:4px solid #e9b56a; padding-left:24px; margin:2px 0 8px;
     font-size:clamp(19px,2.4vw,25px); color:#fbe6d0; font-weight:600; line-height:1.42; max-width:880px}
   .agni-lead b{color:#ffd79a}
+  .agni-top{display:grid; grid-template-columns:1.4fr 1fr; gap:50px; align-items:center; margin-bottom:46px}
+  .agni-top .sec-head{margin-bottom:0}
+  .agni-cred{background:rgba(255,255,255,.07); border:1px solid rgba(255,226,188,.20);
+    border-radius:18px; padding:26px 28px; box-shadow:0 20px 46px rgba(25,10,0,.34); backdrop-filter:blur(4px)}
+  .agni-cred-head{display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:18px}
+  .agni-cred-lbl{font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.2em; text-transform:uppercase; color:#ffd79a}
+  .agni-cred-badge{font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.06em; text-transform:uppercase;
+    color:#5a2a0d; background:#ffe0b8; border-radius:20px; padding:5px 11px; white-space:nowrap}
+  .agni-cred-code{font-family:"IBM Plex Mono",monospace; font-size:clamp(15px,1.6vw,18px); letter-spacing:.14em;
+    color:#fff6ec; margin-bottom:22px}
+  .agni-cred-rows{list-style:none; display:flex; flex-direction:column; gap:13px}
+  .agni-cred-rows li{display:flex; align-items:center; gap:11px; font-size:14.5px; color:#fbe6d0}
+  .agni-cred-rows li em{margin-left:auto; font-style:normal; font-family:"IBM Plex Mono",monospace;
+    font-size:10.5px; letter-spacing:.08em; text-transform:uppercase; color:#ffcf8f}
+  .agni-cred-rows .ck{width:20px; height:20px; border-radius:50%; flex:none;
+    background:rgba(255,207,143,.18); border:1px solid rgba(255,207,143,.42); color:#ffcf8f;
+    display:flex; align-items:center; justify-content:center; font-size:11px}
   .agni{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
   .agni-card{background:rgba(255,255,255,.06); border:1px solid rgba(255,226,188,.16);
     border-radius:16px; padding:28px 26px; box-shadow:0 14px 32px rgba(25,10,0,.28); backdrop-filter:blur(3px)}
@@ -301,6 +318,7 @@
   @media (max-width:900px){
     .nav-links{display:none}
     .minis,.vm-grid,.plist,.grid2,.benefits,.cust,.streams,.checks,.hcards,.agni{grid-template-columns:1fr}
+    .agni-top{grid-template-columns:1fr; gap:34px}
     .inds{grid-template-columns:repeat(2,1fr)}
     .lead-wrap,.person{grid-template-columns:1fr}
     .lead-photo,.person img{max-width:280px}
@@ -547,11 +565,25 @@
 <!-- ===================== AGNIVEER ===================== -->
 <section class="sec agni-band" id="agniveer">
   <div class="container">
-    <div class="sec-head">
-      <div class="eyebrow">For our Agniveers</div>
-      <span class="agni-flag">★ A first-of-its-kind verified fast-track</span>
-      <h2>A fast-track from service to civilian career</h2>
-      <p class="agni-lead">Thousands of disciplined, service-trained Agniveers return to civilian life every year. <b>Employix turns their service into a verified head-start</b> — record and conduct pre-verified, then routed straight to partner employers for priority interviews and same-day onboarding. A dedicated lane, not the general queue.</p>
+    <div class="agni-top">
+      <div class="sec-head">
+        <div class="eyebrow">For our Agniveers</div>
+        <span class="agni-flag"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>A first-of-its-kind verified fast-track</span>
+        <h2>A fast-track from service to civilian career</h2>
+        <p class="agni-lead">Thousands of disciplined, service-trained Agniveers return to civilian life every year. <b>Employix turns their service into a verified head-start</b> — record and conduct pre-verified, then routed straight to partner employers for priority interviews and same-day onboarding. A dedicated lane, not the general queue.</p>
+      </div>
+      <aside class="agni-cred" aria-label="Illustrative verified Agniveer record">
+        <div class="agni-cred-head">
+          <span class="agni-cred-lbl">Employix ID</span>
+          <span class="agni-cred-badge">Service verified</span>
+        </div>
+        <div class="agni-cred-code">EMX · SVC · XXXX · XXXX</div>
+        <ul class="agni-cred-rows">
+          <li><span class="ck">✓</span> Service record <em>Verified</em></li>
+          <li><span class="ck">✓</span> Conduct &amp; discipline <em>Verified</em></li>
+          <li><span class="ck">✓</span> Skills &amp; training <em>Verified</em></li>
+        </ul>
+      </aside>
     </div>
     <div class="agni">
       <div class="agni-card">
