@@ -262,36 +262,40 @@
     color:#8ea3bd; text-transform:uppercase; text-align:right; line-height:1.8}
 
   /* ---------- agniveer ---------- */
-  .agni-band{background:linear-gradient(135deg,#ffb057 0%,#f98a1e 48%,#f47512 100%);
-    color:var(--body); position:relative; overflow:hidden}
+  .agni-band{background:
+      radial-gradient(900px 460px at 80% -12%,rgba(255,198,122,.20),transparent 58%),
+      radial-gradient(125% 130% at 50% 0%,transparent 60%,rgba(35,14,0,.38)),
+      linear-gradient(150deg,#a85a18 0%,#8a3f13 52%,#55260c 100%);
+    color:#fbeadb; position:relative; overflow:hidden}
   .agni-band::after{content:""; position:absolute; inset:0;
-    background-image:linear-gradient(rgba(12,28,57,.05) 1px,transparent 1px),
-      linear-gradient(90deg,rgba(12,28,57,.05) 1px,transparent 1px);
-    background-size:46px 46px; mask-image:radial-gradient(700px 400px at 82% 15%,#000,transparent)}
-  .agni-band::before{content:""; position:absolute; top:0; left:0; right:0; height:4px;
+    background-image:linear-gradient(rgba(255,224,186,.05) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(255,224,186,.05) 1px,transparent 1px);
+    background-size:46px 46px; mask-image:radial-gradient(720px 420px at 80% 12%,#000,transparent)}
+  .agni-band::before{content:""; position:absolute; top:0; left:0; right:0; height:3px;
     background:linear-gradient(90deg,#ff9933 0,#ffffff 50%,#138808 100%); z-index:2}
   .agni-band .container{position:relative; z-index:1}
-  .agni-band .eyebrow{color:#0c1c39}
-  .agni-band h2{color:#0c1c39}
+  .agni-band .eyebrow{color:#ffe7c9}
+  .agni-band h2{color:#fdf3e6}
   .agni-flag{display:inline-flex; align-items:center; gap:8px; font-family:"IBM Plex Mono",monospace;
     font-size:12.5px; letter-spacing:.12em; text-transform:uppercase; font-weight:600;
-    color:#fff; background:#0c1c39; border-radius:20px; padding:7px 15px; margin-bottom:20px}
-  .agni-lead{border-left:4px solid #0c1c39; padding-left:24px; margin:2px 0 8px;
-    font-size:clamp(19px,2.4vw,25px); color:#14263f; font-weight:600; line-height:1.42; max-width:880px}
-  .agni-lead b{color:#0c1c39}
+    color:#ffe6c2; background:rgba(255,240,220,.12); border:1px solid rgba(255,214,158,.42);
+    border-radius:20px; padding:7px 15px; margin-bottom:20px}
+  .agni-lead{border-left:4px solid #e9b56a; padding-left:24px; margin:2px 0 8px;
+    font-size:clamp(19px,2.4vw,25px); color:#fbe6d0; font-weight:600; line-height:1.42; max-width:880px}
+  .agni-lead b{color:#ffd79a}
   .agni{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
-  .agni-card{background:#fff; border:1px solid rgba(0,0,0,.05);
-    border-radius:16px; padding:28px 26px; box-shadow:0 16px 34px rgba(120,55,0,.20)}
+  .agni-card{background:rgba(255,255,255,.06); border:1px solid rgba(255,226,188,.16);
+    border-radius:16px; padding:28px 26px; box-shadow:0 14px 32px rgba(25,10,0,.28); backdrop-filter:blur(3px)}
   .agni-card .ic{width:48px; height:48px; border-radius:12px; flex:none;
-    background:#fff3e6; border:1px solid #ffd9b0; color:#e56a00;
+    background:rgba(255,208,150,.14); border:1px solid rgba(255,203,140,.34); color:#ffcf8f;
     display:flex; align-items:center; justify-content:center; margin-bottom:16px}
-  .agni-card h3{font-family:"Archivo",sans-serif; color:var(--ink); font-size:20px; margin-bottom:8px}
-  .agni-card p{color:var(--muted); font-size:15px; line-height:1.55}
+  .agni-card h3{font-family:"Archivo",sans-serif; color:#fff6ec; font-size:20px; margin-bottom:8px}
+  .agni-card p{color:rgba(251,230,208,.82); font-size:15px; line-height:1.55}
   .agni-cta{margin-top:30px}
-  .agni-cta a{display:inline-flex; align-items:center; gap:10px; background:#0c1c39;
-    color:#fff; padding:13px 24px; border-radius:9px; font-weight:600; font-size:15.5px;
-    text-decoration:none; transition:background .15s}
-  .agni-cta a:hover{background:#1a3054}
+  .agni-cta a{display:inline-flex; align-items:center; gap:10px; background:#fde6c8;
+    color:#5a2a0d; padding:13px 24px; border-radius:9px; font-weight:700; font-size:15.5px;
+    text-decoration:none; transition:background .15s, transform .15s}
+  .agni-cta a:hover{background:#fff0da; transform:translateY(-1px)}
 
   /* ---------- responsive ---------- */
   @media (max-width:900px){
